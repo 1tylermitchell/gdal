@@ -171,6 +171,7 @@ int main( int argc, char ** argv )
 
     if( dfInterval == 0.0 && nFixedLevelCount == 0 )
     {
+        fprintf(stderr, "At least one of -i or -fl is required.\n");
         Usage();
     }
 
