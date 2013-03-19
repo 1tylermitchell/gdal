@@ -879,7 +879,7 @@ gdal2tiles temp.vrt""" % self.input )
 					'''
 						
 			else:
-				self.error("Input file has unknown SRS.", "Use --s_srs ESPG:xyz (or similar) to provide source reference system." )
+				self.error("Input file has unknown SRS.", "Use --s_srs EPSG:xyz (or similar) to provide source reference system." )
 
 			if self.out_ds and self.options.verbose:
 				print("Projected file:", "tiles.vrt", "( %sP x %sL - %s bands)" % (self.out_ds.RasterXSize, self.out_ds.RasterYSize, self.out_ds.RasterCount))
